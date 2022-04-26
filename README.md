@@ -1,5 +1,5 @@
 <h1 align="right">
-  <img src="https://miro.medium.com/max/1400/1*LDHQffX7z5OGkzRP-WBc4g.png" width="200px" align="left" alt="Animation stickers created by inipagistudio - Flaticon" title="Animation stickers created by inipagistudio - Flaticon" />
+  <img src="https://miro.medium.com/max/1400/1*LDHQffX7z5OGkzRP-WBc4g.png" width="250px" align="left" alt="Source: IBM.COM" title="Source: IBM.COM" />
   Software Analysis For The Development Of Artificial Intelligence And Big Data Tasks In Quantum Computers
 </h1>
 
@@ -11,6 +11,8 @@
     <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
   </a>
 </p>
+<br>
+<br>
 <br>
 
 ## :eyes: Overview
