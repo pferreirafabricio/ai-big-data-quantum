@@ -1,23 +1,20 @@
 <h1 align="right">
-  <img src="https://user-images.githubusercontent.com/42717522/165157572-1c8862d0-41db-472d-8e19-38789f19bf8c.png" width="200px" align="left" alt="Animation stickers created by inipagistudio - Flaticon" title="Animation stickers created by inipagistudio - Flaticon" />
+  <img src="https://miro.medium.com/max/1400/1*LDHQffX7z5OGkzRP-WBc4g.png" width="200px" align="left" alt="Animation stickers created by inipagistudio - Flaticon" title="Animation stickers created by inipagistudio - Flaticon" />
   Software Analysis For The Development Of Artificial Intelligence And Big Data Tasks In Quantum Computers
 </h1>
 
 
 <p align="right">
-  lorem
   <br><br>
   <!-- License -->
   <a>
-    <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=61ffca">
+    <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
   </a>
 </p>
 <br>
 
 ## :eyes: Overview
 Put some images of your project here.
-
-> Take a look at: https://pferreirafabricio.github.io/digital-games-for-web/
 
 ## :open_book: About 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -31,7 +28,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 - [Awesome technology here](http://link.here.com)
 
 ## 🏄‍♂️ Quick Start
- 1. Clone this repository `git clone https://github.com/pferreirafabricio/inmana.git`;
+ 1. Clone this repository `git clone https://github.com/pferreirafabricio/ai-big-data-quantum.git`;
  2. Enter in the project's folder: `cd ?`
  3. Finally `...` 😃
  
