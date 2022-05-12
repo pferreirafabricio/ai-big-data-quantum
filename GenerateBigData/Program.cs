@@ -1,19 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Bogus;
 using GenerateBigData.DTO;
+using GenerateBigData.Utils;
 
-Console.WriteLine("Hello, World!");
+int numberOfStudents = int.Parse(args.FirstOrDefault() ?? "1");
+string fileName = args[1] ?? "Students";
 
+Console.WriteLine("Initializing students creation...");
 
-var students = new Faker<Order>()
-    //Ensure all properties have rules. By default, StrictMode is false
-    //Set a global policy by using Faker.DefaultStrictMode
+var studentFakerGenerator = new Faker<Student>()
     .StrictMode(true)
-    //OrderId is deterministic
-    .RuleFor(o => o.OrderId, f => orderIds++)
-    //Pick some fruit from a basket
-    .RuleFor(o => o.Item, f => f.PickRandom(fruit))
-    //A random quantity from 1 to 10
-    .RuleFor(o => o.Quantity, f => f.Random.Number(1, 10))
-    //A nullable int? with 80% probability of being null.
-    //The .OrNull extension is in the Bogus.Extensions namespace.
-    .RuleFor(o => o.LotNumber, f => f.Random.Int(0, 100).OrNull(f, .8f));
+    .RuleFor(o => o.Name, f => f.Name.FullName())
+    .RuleFor(o => o.Avatar, f => f.Internet.Avatar())
+    .RuleFor(o => o.Age, f => f.Random.Number(18, 60));
+
+var students = new List<Student>();
+
+for (int index = 0; index < numberOfStudents; index++)
+    students.Add(studentFakerGenerator.Generate());
+
+JsonFileUtils.Write(students, $"Samples/{fileName}.json");
+
+Console.WriteLine("Students creation done!");

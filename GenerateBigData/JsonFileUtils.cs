@@ -1,22 +1,25 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace GenerateBigData.Utils;
-using System;
-using System.Object;
 
 public static class JsonFileUtils
 {
-    private static readonly JsonSerializerSettings _options
-        = new() { NullValueHandling = NullValueHandling.Ignore };
+    private static readonly JsonSerializerOptions _options =
+        new() { DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull };
 
-    public static void StreamWrite(object obj, string fileName)
+
+    public static void Write(object obj, string fileName)
     {
-        var options = new JsonSerializerOptions(_options) 
-        { 
+        var options = new JsonSerializerOptions(_options)
+        {
             WriteIndented = true
         };
 
-        using var fileStream = File.Create(fileName);
-        using var utf8JsonWriter = new Utf8JsonWriter(fileStream);
+        if (File.Exists(fileName))
+            File.Delete(fileName);
 
-        JsonSerializer.Serialize(utf8JsonWriter, obj, _options);
+        var jsonString = JsonSerializer.Serialize(obj, options);
+        File.WriteAllText(fileName, jsonString);
     }
 }
