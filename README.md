@@ -10,16 +10,18 @@
   <a>
     <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
   </a>
+  
 </p>
 <br>
 <br>
 <br>
 
 ## :eyes: Overview
-Put some images of your project here.
+<img src="https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png">
+<img height="70px" src="https://www.fatec.edu.br/jogos/wp-content/uploads/sites/2/2019/08/Cores@300x.png">
 
-## :open_book: About 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+## :open_book: About
+This is a scientific research project, being developed in [FATEC Americana](https://www.fatec.edu.br/), aiming study softwares that can be used to develop Artificial Inteligence, Machine Learning and Big Data tasks in quantum computers.
 
 # Features
 - 🤠 Lorem Ipsum is simply dummy text of the printing and typesetting industry
@@ -27,12 +29,15 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 - 👍 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
 
 ## :bricks: This project was built with: 
-- [Awesome technology here](http://link.here.com)
+- [.NET](https://dotnet.microsoft.com/en-us/)
+- [Q#](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
+- [QDK](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
+- [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
 ## 🏄‍♂️ Quick Start
  1. Clone this repository `git clone https://github.com/pferreirafabricio/ai-big-data-quantum.git`;
- 2. Enter in the project's folder: `cd ?`
- 3. Finally `...` 😃
+ 2. Enter in the project's folder: `cd ai-big-data-quantum`
+ 3. Run whatever project you want 😃
  
 ## :recycle: Contribute
  1. Fork this repository;
@@ -41,8 +46,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
  4. Push your branch: ```git push origin my-feature```
 
 ## :page_with_curl:	License
-This project is under the ??? license. Take a look at the [LICENSE](LICENSE.md) file for more details.
+This project is under the MIT license. Take a look at the [LICENSE](LICENSE.md) file for more details.
 
 ## 📚 Learn more
 
-  * Guides: https://super.guide.com
+  * What are the Q# programming language and Quantum Development Kit (QDK): https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk
