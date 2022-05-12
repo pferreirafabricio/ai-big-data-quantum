@@ -23,11 +23,6 @@
 ## :open_book: About
 This is a scientific research project, being developed in [FATEC Americana](https://www.fatec.edu.br/), aiming study softwares that can be used to develop Artificial Inteligence, Machine Learning and Big Data tasks in quantum computers.
 
-# Features
-- 🤠 Lorem Ipsum is simply dummy text of the printing and typesetting industry
-- ✨ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-- 👍 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
-
 ## :bricks: This project was built with: 
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [Q#](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
