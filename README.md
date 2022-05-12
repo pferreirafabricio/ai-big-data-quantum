@@ -50,4 +50,13 @@ This project is under the MIT license. Take a look at the [LICENSE](LICENSE.md) 
 
 ## 📚 Learn more
 
-  * What are the Q# programming language and Quantum Development Kit (QDK): https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk
+  * What are the Q# programming language and Quantum Development Kit (QDK)?: https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk
+  * How quantum computing will boost the value of big data: https://intetics.medium.com/how-quantum-computing-will-boost-the-value-of-big-data-bccb95fb352b
+  * Quantum Computing and The Future of Big Data: https://isg-one.com/articles/quantum-computing-and-the-future-of-big-data
+  * How Quantum Computers Will Revolutionise Artificial Intelligence, Machine Learning And Big Data: https://isg-one.com/articles/quantum-computing-and-the-future-of-big-data
+  * Introduction to Quantum Machine Learning: https://docs.microsoft.com/en-us/azure/quantum/user-guide/libraries/machine-learning/intro
+  * Write a Q# and .NET program to run on a local quantum simulator: https://docs.microsoft.com/en-us/azure/quantum/how-to-csharp-qdk-local
+  * Quantum Computing Expert Explains One Concept in 5 Levels of Difficulty: https://www.youtube.com/watch?v=OWJCfOvoch
+  * Data types in Q#: https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem
+  * Quantum computing history and background: https://docs.microsoft.com/en-us/azure/quantum/concepts-overview
+  * Azure Quantum – Quantum Service: https://azure.microsoft.com/en-us/services/quantum
