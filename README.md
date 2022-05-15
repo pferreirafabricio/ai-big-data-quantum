@@ -17,8 +17,9 @@
 <br>
 
 ## :eyes: Overview
-<img src="https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png">
+<img align="left" src="https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png">
 <img height="70px" src="https://www.fatec.edu.br/jogos/wp-content/uploads/sites/2/2019/08/Cores@300x.png">
+<br/>
 
 ## :open_book: About
 This is a scientific research project, being developed in [FATEC Americana](https://www.fatec.edu.br/), aiming study softwares that can be used to develop Artificial Inteligence, Machine Learning and Big Data tasks in quantum computers.
