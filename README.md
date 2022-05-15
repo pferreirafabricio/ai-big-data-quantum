@@ -42,7 +42,7 @@ This is a scientific research project, being developed in [FATEC Americana](http
  4. Push your branch: ```git push origin my-feature```
 
 ## :page_with_curl:	License
-This project is under the MIT license. Take a look at the [LICENSE](LICENSE.md) file for more details.
+This project is under the MIT license. Take a look at the [LICENSE](LICENSE) file for more details.
 
 ## 📚 Learn more
 
