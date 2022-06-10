@@ -9,12 +9,8 @@ import matplotlib.pyplot as plt
 df_treino = pd.DataFrame({
     'salary': ['high', 'small', 'small', 'high', 'high', 'small'],
     'localization': ['away', 'near', 'away', 'away', 'near', 'away'],
-    'function': ['interest', 'disinterest',
-               'interest', 'disinterest',
-               'interest', 'disinterest'],
-    'decision': ['sim', 'nao',
-                'sim', 'nao',
-                'sim', 'nao']
+    'function': ['interest', 'disinterest', 'interest', 'disinterest', 'interest', 'disinterest'],
+    'decision': ['sim', 'nao', 'sim', 'nao', 'sim', 'nao']
 })
 
 print(df_treino)
