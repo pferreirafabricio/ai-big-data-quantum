@@ -17,15 +17,25 @@ HouseData[] houseData =
 IDataView trainingData = mlContext.Data.LoadFromEnumerable(houseData);
 
 // 2. Specify data preparation and model training pipeline
-var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
-    .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
+var pipeline = mlContext.Transforms
+    .Concatenate("Features", new[] { "Size" })
+    .Append(
+        mlContext.Regression
+            .Trainers
+            .Sdca(
+                labelColumnName: "Price",
+                maximumNumberOfIterations: 100
+            )
+    );
 
 // 3. Train model
 var model = pipeline.Fit(trainingData);
 
 // 4. Make a prediction
 var size = new HouseData() { Size = 2.5F };
-var price = mlContext.Model.CreatePredictionEngine<HouseData, Prediction>(model).Predict(size);
+var price = mlContext.Model
+    .CreatePredictionEngine<HouseData, Prediction>(model)
+    .Predict(size);
 
 Console.WriteLine($"Predicted price for size: {size.Size * 1000} sq ft= {price.Price * 100:C}k");
 
