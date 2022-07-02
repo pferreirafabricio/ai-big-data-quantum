@@ -4,51 +4,53 @@ using Microsoft.ML.Data;
 
 MLContext mlContext = new MLContext();
 
-// 1. Import or create training data
 HouseData[] houseData =
 {
-    new HouseData() { Size = 1.1F, Price = 1.2F },
-    new HouseData() { Size = 1.9F, Price = 2.3F },
-    new HouseData() { Size = 2.8F, Price = 3.0F },
-    new HouseData() { Size = 3.4F, Price = 3.7F },
-    new HouseData() { Size = 3.9F, Price = 4.0F }
+    new HouseData() { Size = 1.1F, Price = 1.2F, IsExpensive = false },
+    new HouseData() { Size = 1.3F, Price = 1.5F, IsExpensive = false },
+    new HouseData() { Size = 1.5F, Price = 1.7F, IsExpensive = false },
+    new HouseData() { Size = 1.7F, Price = 1.8F, IsExpensive = false },
+    new HouseData() { Size = 1.9F, Price = 2.0F, IsExpensive = false },
+    new HouseData() { Size = 2.1F, Price = 2.2F, IsExpensive = false },
+    new HouseData() { Size = 2.3F, Price = 2.4F, IsExpensive = true },
+    new HouseData() { Size = 2.5F, Price = 2.7F, IsExpensive = true },
+    new HouseData() { Size = 2.7F, Price = 2.8F, IsExpensive = true },
+    new HouseData() { Size = 2.9F, Price = 2.9F, IsExpensive = true },
+    new HouseData() { Size = 3.1F, Price = 3.2F, IsExpensive = true }
 };
 
 IDataView trainingData = mlContext.Data.LoadFromEnumerable(houseData);
 
-// 2. Specify data preparation and model training pipeline
 var pipeline = mlContext.Transforms
-    .Concatenate("Features", new[] { "Size" })
+    .Concatenate("Features", new[] { "Size", "Price" })
     .Append(
-        mlContext.Regression
+        mlContext
+            .BinaryClassification
             .Trainers
-            .Sdca(
-                labelColumnName: "Price",
+            .SdcaLogisticRegression(
+                labelColumnName: "IsExpensive",
                 maximumNumberOfIterations: 100
             )
     );
 
-// 3. Train model
 var model = pipeline.Fit(trainingData);
 
-// 4. Make a prediction
-var size = new HouseData() { Size = 2.5F };
-var price = mlContext.Model
+var validationData = new HouseData() { Size = 2.2F, Price = 2.4F };
+var result = mlContext.Model
     .CreatePredictionEngine<HouseData, Prediction>(model)
-    .Predict(size);
+    .Predict(validationData);
 
-Console.WriteLine($"Predicted price for size: {size.Size * 1000} sq ft= {price.Price * 100:C}k");
-
-// Predicted price for size: 2500 sq ft= $261.98k
+Console.WriteLine($"Predicted price for size: {validationData.Size * 1000} and price: {validationData.Price}. Is expensive? {result.IsExpensive}");
 
 public class HouseData
 {
+    public bool IsExpensive { get; set; }
     public float Size { get; set; }
     public float Price { get; set; }
 }
 
 public class Prediction
 {
-    [ColumnName("Score")]
-    public float Price { get; set; }
+    [ColumnName("PredictedLabel")]
+    public bool IsExpensive { get; set; }
 }
