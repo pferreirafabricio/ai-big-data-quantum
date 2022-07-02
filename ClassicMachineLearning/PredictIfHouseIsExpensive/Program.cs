@@ -51,6 +51,11 @@ public class HouseData
 
 public class Prediction
 {
+    /// <summary>
+    /// ColumnName attribute is used to change the column name from
+    /// its default value, which is the name of the field.
+    /// https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/SentimentAnalysisConsoleApp/DataStructures/SentimentPrediction.cs
+    /// </summary>
     [ColumnName("PredictedLabel")]
     public bool IsExpensive { get; set; }
 }
