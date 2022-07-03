@@ -35,11 +35,18 @@ namespace PredictIfHouseIsExpensive.Quantum {
         trainingLabels : Int[],
         initialParameters : Double[][]
     ) : (Double[], Double) {
+        Message("Beggining training.");
+
         // convert training data and labels into a single data structure
         let samples = Mapped(
             LabeledSample,
             Zipped(trainingVectors, trainingLabels)
         );
+
+        Message($"Samples: {samples}");
+
+        Message("Ready to train.");
+        
         let (optimizedModel, nMisses) = TrainSequentialClassifier(
             Mapped(
                 SequentialModel(ClassifierStructure(), _, 0.0),
@@ -47,33 +54,46 @@ namespace PredictIfHouseIsExpensive.Quantum {
             ),
             samples,
             DefaultTrainingOptions()
-                w/ LearningRate <- 2.0
-                w/ Tolerance <- 0.0005,
+                w/ LearningRate <- 0.1
+                // w/ MinibatchSize <- 15
+                w/ Tolerance <- 0.005
+                w/ NMeasurements <- 100000
+                // w/ MaxEpochs <- 16
+                w/ VerboseMessage <- Message,
             DefaultSchedule(trainingVectors),
             DefaultSchedule(trainingVectors)
         );
+
         Message($"Training complete, found optimal parameters: {optimizedModel::Parameters}, {optimizedModel::Bias} with {nMisses} misses");
         return (optimizedModel::Parameters, optimizedModel::Bias);
     }
 
 
     // Entry point for using the model to classify the data; takes validation data and model parameters as inputs and uses hard-coded classifier structure.
-    operation ClassifyLinearlySeparableModel(
+    operation ValidateClassifyLinearlySeparableModel(
         samples : Double[][],
         parameters : Double[],
         bias : Double,
-        tolerance  : Double,
-        nMeasurements : Int
+        tolerance : Double,
+        numberOfMeasurements : Int
     )
     : Int[] {
         let model = Default<SequentialModel>()
             w/ Structure <- ClassifierStructure()
             w/ Parameters <- parameters
             w/ Bias <- bias;
+
+        Message($"Model: {model}");
+
         let probabilities = EstimateClassificationProbabilities(
-            tolerance, model,
-            samples, nMeasurements
+            tolerance,
+            model,
+            samples,
+            numberOfMeasurements
         );
+
+        Message($"Probabilities: {probabilities}");
+
         return InferredLabels(model::Bias, probabilities);
     }
 

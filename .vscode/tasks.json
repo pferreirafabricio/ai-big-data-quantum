@@ -13,6 +13,7 @@
             ],
             "problemMatcher": "$msCompile"
         },
+        
         {
             "label": "build-house",
             "command": "dotnet",
@@ -20,6 +21,18 @@
             "args": [
                 "build",
                 "${workspaceFolder}/BasicMachineLearning/PredictHousePrice/PredictHousePrice.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-quantum-house",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/QuantumMachineLearning/PredictIfHouseIsExpensive/Host/Host.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

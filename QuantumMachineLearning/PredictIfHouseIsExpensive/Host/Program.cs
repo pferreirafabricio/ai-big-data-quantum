@@ -20,26 +20,23 @@ HouseData[] houseData =
 };
 
 var validationData = new List<double[]>();
-validationData.Add(new double[] { 2.2F, 2.4F });
+validationData.Add(new double[] { 1.1D, 1.2D });
+// validationData.Add(new double[] { 2.2D, 2.4D });
 
 var trainingData = new List<double[]>();
 var trainingLabels = new List<long>();
 
-var initialParameters = new List<double[]>();
-initialParameters.Add(new double[] { 1.0D, 2.0D });
-
-// double[,] trainingData = new double[10, 2];
-// int[] trainingLabels = new int[10];
-// double[,] initialParameters = new double[,] { { 1.0D }, { 2.0D } };
+var initialParameters = new[]
+{
+    new [] { 1.0111D, 2.2543534D, 2.45656546D, 3.111111D },
+    new [] { 1.4483434D, 2.2645654675D, 2.4D, 3.8356349692D },
+    new [] { 1.0453534D, 2.23333D, 2.443345D, 3.555557567 },
+};
 
 for (var index = 0; index < houseData.Length; index++)
 {
     trainingData.Add(new double[] { houseData[index].Size, houseData[index].Price });
     trainingLabels.Add(houseData[index].IsExpensive ? 1L : 0L);
-
-    // trainingData[index, 1] = houseData[index].Size;
-    // trainingData[index, 2] = houseData[index].Price;
-    // trainingLabels[index] = houseData[index].IsExpensive ? 1 : 0;
 }
 
 var quantumTrainingData = new QArray<QArray<double>>(
@@ -52,7 +49,7 @@ var quantumInitialParameters = new QArray<QArray<double>>(
     initialParameters.Select(vector => new QArray<double>(vector))
 );
 
-var quantumValidationData =  new QArray<QArray<double>>(
+var quantumValidationData = new QArray<QArray<double>>(
     validationData.Select(vector => new QArray<double>(vector))
 );
 
@@ -63,22 +60,22 @@ var (optimizedParameters, optimizedBias) = await TrainLinearlySeparableModel
         targetMachine,
         trainingVectors: quantumTrainingData,
         trainingLabels: quantumTrainingLabel,
-        initialParameters: new QArray<QArray<double>>()
+        initialParameters: quantumValidationData
     );
 
-var results = await ClassifyLinearlySeparableModel
+var results = await ValidateClassifyLinearlySeparableModel
     .Run(
         targetMachine,
         samples: quantumValidationData,
         parameters: optimizedParameters,
         bias: optimizedBias,
         tolerance: 0.0005,
-        nMeasurements: 100
+        numberOfMeasurements: 100_000
     );
 
 foreach (var result in results)
 {
-    Console.WriteLine($"Observed {100 * result:F2}% misclassifications.");
+    Console.WriteLine($"Result: {result:F10}.");
 }
 
 public class HouseData
