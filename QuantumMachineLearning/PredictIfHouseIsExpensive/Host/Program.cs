@@ -16,21 +16,22 @@ HouseData[] houseData =
     new HouseData() { Size = 2.5D, Price = 2.7D, IsExpensive = true },
     new HouseData() { Size = 2.7D, Price = 2.8D, IsExpensive = true },
     new HouseData() { Size = 2.9D, Price = 2.9D, IsExpensive = true },
-    new HouseData() { Size = 3.1D, Price = 3.2D, IsExpensive = true }
+    new HouseData() { Size = 3.1D, Price = 3.2D, IsExpensive = true },
 };
 
 var validationData = new List<double[]>();
-validationData.Add(new double[] { 1.1D, 1.2D });
-// validationData.Add(new double[] { 2.2D, 2.4D });
+validationData.Add(new double[] { 2.2D, 2.4D });
 
 var trainingData = new List<double[]>();
 var trainingLabels = new List<long>();
 
 var initialParameters = new[]
 {
-    new [] { 1.0111D, 2.2543534D, 2.45656546D, 3.111111D },
-    new [] { 1.4483434D, 2.2645654675D, 2.4D, 3.8356349692D },
-    new [] { 1.0453534D, 2.23333D, 2.443345D, 3.555557567 },
+    new [] { 0.74855, 0.86259, 0.50246, 1D },
+    new [] { 0.20398, 0D, 0.88110, 0.49063, },
+    new [] { 1D, 0.58477, 0.47506, 0.63679 },
+    new [] { 0.81057, 0.90390, 0.60358, 0D },
+    new [] { 0.46373, 0.94726, 1D, 0.93518 },
 };
 
 for (var index = 0; index < houseData.Length; index++)
@@ -54,13 +55,19 @@ var quantumValidationData = new QArray<QArray<double>>(
 );
 
 using var targetMachine = new QuantumSimulator();
+var tolerance = 0.000001D;
+var learningRate = 0.00001D;
+var numberOfMeasurements = 100_000;
 
 var (optimizedParameters, optimizedBias) = await TrainLinearlySeparableModel
     .Run(
         targetMachine,
         trainingVectors: quantumTrainingData,
         trainingLabels: quantumTrainingLabel,
-        initialParameters: quantumValidationData
+        initialParameters: quantumInitialParameters,
+        learningRate: learningRate,
+        tolerance: tolerance,
+        numberOfMeasurements: numberOfMeasurements
     );
 
 var results = await ValidateClassifyLinearlySeparableModel
@@ -69,13 +76,13 @@ var results = await ValidateClassifyLinearlySeparableModel
         samples: quantumValidationData,
         parameters: optimizedParameters,
         bias: optimizedBias,
-        tolerance: 0.0005,
-        numberOfMeasurements: 100_000
+        tolerance: tolerance,
+        numberOfMeasurements: numberOfMeasurements
     );
 
 foreach (var result in results)
 {
-    Console.WriteLine($"Result: {result:F10}.");
+    Console.WriteLine($"Result: {result:F5}.");
 }
 
 public class HouseData
@@ -83,14 +90,4 @@ public class HouseData
     public bool IsExpensive { get; set; }
     public double Size { get; set; }
     public double Price { get; set; }
-}
-
-public class Prediction
-{
-    /// <summary>
-    /// ColumnName attribute is used to change the column name from
-    /// its default value, which is the name of the field.
-    /// https://github.com/dotnet/machinelearning-samples/blob/main/samples/csharp/getting-started/BinaryClassification_SentimentAnalysis/SentimentAnalysis/SentimentAnalysisConsoleApp/DataStructures/SentimentPrediction.cs
-    /// </summary>
-    public bool IsExpensive { get; set; }
 }

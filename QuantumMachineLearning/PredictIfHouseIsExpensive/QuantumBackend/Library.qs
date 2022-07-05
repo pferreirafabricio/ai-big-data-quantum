@@ -33,9 +33,13 @@ namespace PredictIfHouseIsExpensive.Quantum {
     operation TrainLinearlySeparableModel(
         trainingVectors : Double[][],
         trainingLabels : Int[],
-        initialParameters : Double[][]
+        initialParameters : Double[][],
+        learningRate : Double,
+        tolerance : Double,
+        numberOfMeasurements : Int
     ) : (Double[], Double) {
         Message("Beggining training.");
+        Message($"Learning Rate: {learningRate} | Tolerance {tolerance} | Number of measurements {numberOfMeasurements}");
 
         // convert training data and labels into a single data structure
         let samples = Mapped(
@@ -54,10 +58,10 @@ namespace PredictIfHouseIsExpensive.Quantum {
             ),
             samples,
             DefaultTrainingOptions()
-                w/ LearningRate <- 0.1
+                w/ LearningRate <- learningRate
                 // w/ MinibatchSize <- 15
-                w/ Tolerance <- 0.005
-                w/ NMeasurements <- 100000
+                w/ Tolerance <- tolerance
+                w/ NMeasurements <- numberOfMeasurements
                 // w/ MaxEpochs <- 16
                 w/ VerboseMessage <- Message,
             DefaultSchedule(trainingVectors),
@@ -67,7 +71,6 @@ namespace PredictIfHouseIsExpensive.Quantum {
         Message($"Training complete, found optimal parameters: {optimizedModel::Parameters}, {optimizedModel::Bias} with {nMisses} misses");
         return (optimizedModel::Parameters, optimizedModel::Bias);
     }
-
 
     // Entry point for using the model to classify the data; takes validation data and model parameters as inputs and uses hard-coded classifier structure.
     operation ValidateClassifyLinearlySeparableModel(
@@ -91,8 +94,6 @@ namespace PredictIfHouseIsExpensive.Quantum {
             samples,
             numberOfMeasurements
         );
-
-        Message($"Probabilities: {probabilities}");
 
         return InferredLabels(model::Bias, probabilities);
     }
