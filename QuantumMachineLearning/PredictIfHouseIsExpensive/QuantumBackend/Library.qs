@@ -21,15 +21,12 @@ namespace PredictIfHouseIsExpensive.Quantum {
         ]);
     }
 
-    // The definition of classifier structure for the case when the data is linearly separable and fits into 1 qubit
     function ClassifierStructure() : ControlledRotation[] {
         return [
             ControlledRotation((0, []), PauliY, 0)
         ];
     }
 
-
-    // Entry point for training a model; takes the data as the input and uses hard-coded classifier structure.
     operation TrainLinearlySeparableModel(
         trainingVectors : Double[][],
         trainingLabels : Int[],
@@ -41,7 +38,6 @@ namespace PredictIfHouseIsExpensive.Quantum {
         Message("Beggining training.");
         Message($"Learning Rate: {learningRate} | Tolerance {tolerance} | Number of measurements {numberOfMeasurements}");
 
-        // convert training data and labels into a single data structure
         let samples = Mapped(
             LabeledSample,
             Zipped(trainingVectors, trainingLabels)
@@ -59,10 +55,8 @@ namespace PredictIfHouseIsExpensive.Quantum {
             samples,
             DefaultTrainingOptions()
                 w/ LearningRate <- learningRate
-                // w/ MinibatchSize <- 15
                 w/ Tolerance <- tolerance
                 w/ NMeasurements <- numberOfMeasurements
-                // w/ MaxEpochs <- 16
                 w/ VerboseMessage <- Message,
             DefaultSchedule(trainingVectors),
             DefaultSchedule(trainingVectors)
@@ -72,7 +66,6 @@ namespace PredictIfHouseIsExpensive.Quantum {
         return (optimizedModel::Parameters, optimizedModel::Bias);
     }
 
-    // Entry point for using the model to classify the data; takes validation data and model parameters as inputs and uses hard-coded classifier structure.
     operation ValidateClassifyLinearlySeparableModel(
         samples : Double[][],
         parameters : Double[],
@@ -97,5 +90,4 @@ namespace PredictIfHouseIsExpensive.Quantum {
 
         return InferredLabels(model::Bias, probabilities);
     }
-
 }
