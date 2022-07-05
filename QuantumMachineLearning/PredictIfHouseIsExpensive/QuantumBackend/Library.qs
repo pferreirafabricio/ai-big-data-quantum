@@ -2,9 +2,9 @@
 // Licensed under the MIT License.
 
 //////////////////////////////////////////////////////////////////////
-// This file contains implementations of training and classification routines
-// used in part 1 of the tutorial ("Exploring Quantum Classification Library").
-// You should not modify anything in this file.
+// references:
+// https://github.com/microsoft/QuantumKatas/tree/main/tutorials/QuantumClassification
+// https://docs.microsoft.com/en-us/azure/quantum/user-guide/libraries/machine-learning/basic-classification?tabs=tabid-csharp
 //////////////////////////////////////////////////////////////////////
 
 namespace PredictIfHouseIsExpensive.Quantum {
