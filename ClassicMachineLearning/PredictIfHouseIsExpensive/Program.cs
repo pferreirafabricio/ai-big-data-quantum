@@ -29,7 +29,7 @@ var pipeline = mlContext.Transforms
             .Trainers
             .SdcaLogisticRegression(
                 labelColumnName: "IsExpensive",
-                maximumNumberOfIterations: 100
+                maximumNumberOfIterations: 100_000
             )
     );
 
