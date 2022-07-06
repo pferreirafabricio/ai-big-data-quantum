@@ -40,7 +40,10 @@ var result = mlContext.Model
     .CreatePredictionEngine<HouseData, Prediction>(model)
     .Predict(validationData);
 
-Console.WriteLine($"Predicted price for size: {validationData.Size * 1000} and price: {validationData.Price}. Is expensive? {result.IsExpensive}");
+var size = (validationData.Size * 1000) / 10.76;
+var price = (validationData.Price * 100_000) * 5;
+
+Console.WriteLine($"Predicted price for size: {size:F2} m2 and price: {price:C2}. Is expensive? {result.IsExpensive}");
 
 public class HouseData
 {
