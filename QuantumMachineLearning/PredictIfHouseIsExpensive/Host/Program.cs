@@ -6,17 +6,17 @@ using System.Linq;
 
 HouseData[] houseData =
 {
-    new HouseData() { Size = 1.1D, Price = 1.2D, IsExpensive = false },
-    new HouseData() { Size = 1.3D, Price = 1.5D, IsExpensive = false },
-    new HouseData() { Size = 1.5D, Price = 1.7D, IsExpensive = false },
-    new HouseData() { Size = 1.7D, Price = 1.8D, IsExpensive = false },
-    new HouseData() { Size = 1.9D, Price = 2.0D, IsExpensive = false },
-    new HouseData() { Size = 2.1D, Price = 2.2D, IsExpensive = false },
-    new HouseData() { Size = 2.3D, Price = 2.4D, IsExpensive = true },
-    new HouseData() { Size = 2.5D, Price = 2.7D, IsExpensive = true },
-    new HouseData() { Size = 2.7D, Price = 2.8D, IsExpensive = true },
-    new HouseData() { Size = 2.9D, Price = 2.9D, IsExpensive = true },
-    new HouseData() { Size = 3.1D, Price = 3.2D, IsExpensive = true },
+    new HouseData() { Size = 1.1F, Price = 1.2F, IsExpensive = false },
+    new HouseData() { Size = 1.3F, Price = 1.5F, IsExpensive = false },
+    new HouseData() { Size = 1.5F, Price = 1.7F, IsExpensive = false },
+    new HouseData() { Size = 1.7F, Price = 1.8F, IsExpensive = false },
+    new HouseData() { Size = 1.9F, Price = 2.0F, IsExpensive = false },
+    new HouseData() { Size = 2.1F, Price = 2.2F, IsExpensive = false },
+    new HouseData() { Size = 2.3F, Price = 2.4F, IsExpensive = true },
+    new HouseData() { Size = 2.5F, Price = 2.7F, IsExpensive = true },
+    new HouseData() { Size = 2.7F, Price = 2.8F, IsExpensive = true },
+    new HouseData() { Size = 2.9F, Price = 2.9F, IsExpensive = true },
+    new HouseData() { Size = 3.1F, Price = 3.2F, IsExpensive = true },
 };
 
 var validationData = new List<double[]>();
@@ -88,6 +88,6 @@ foreach (var result in results)
 public class HouseData
 {
     public bool IsExpensive { get; set; }
-    public double Size { get; set; }
-    public double Price { get; set; }
+    public float Size { get; set; }
+    public float Price { get; set; }
 }

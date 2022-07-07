@@ -35,7 +35,7 @@ var pipeline = mlContext.Transforms
 
 var model = pipeline.Fit(trainingData);
 
-var validationData = new HouseData() { Size = 2.2F, Price = 2.4F };
+var validationData = new HouseData() { Size = 2.3F, Price = 2.5F };
 var result = mlContext.Model
     .CreatePredictionEngine<HouseData, Prediction>(model)
     .Predict(validationData);
@@ -43,7 +43,7 @@ var result = mlContext.Model
 var size = (validationData.Size * 1000) / 10.76;
 var price = (validationData.Price * 100_000) * 5;
 
-Console.WriteLine($"Predicted price for size: {size:F2} m2 and price: {price:C2}. Is expensive? {result.IsExpensive}");
+Console.WriteLine($"Predicted price for size: {size:F2}m2 and price: {price:C2}. Is expensive? {result.IsExpensive}");
 
 public class HouseData
 {
