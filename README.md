@@ -17,7 +17,7 @@
 <br>
 
 ## :eyes: Overview
-<img align="left" src="https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png">
+<img height="70px" align="left" src="https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png">
 <img height="70px" src="https://www.fatec.edu.br/jogos/wp-content/uploads/sites/2/2019/08/Cores@300x.png">
 <br/>
 
