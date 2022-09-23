@@ -24,6 +24,11 @@
 ## :open_book: About
 This is a scientific research project, being developed in [FATEC Americana](https://www.fatec.edu.br/), aiming to study software that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers.
 
+## 🔁 Contributions
+- [Microsoft Quantum Docs - Pull Request 503](https://github.com/MicrosoftDocs/quantum-docs/pull/503)
+- [Microsoft Quantum Docs - Issue 474](https://github.com/MicrosoftDocs/quantum-docs/issues/474)
+- [Microsoft Quantum Docs - Pull Request 565](https://github.com/MicrosoftDocs/quantum-docs/pull/565)
+
 ## :bricks: This project was built with: 
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [Q#](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
