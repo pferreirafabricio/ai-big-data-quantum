@@ -36,7 +36,7 @@ This is a scientific research project, being developed in [FATEC Americana](http
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
 ## 🏄‍♂️ Quick Start
- 1. Clone this repository `git clone https://github.com/pferreirafabricio/ai-big-data-quantum.git`;
+ 1. Clone this repository `git clone https://github.com/pferreirafabricio/ai-big-data-quantum.git`
  2. Enter in the project's folder: `cd ai-big-data-quantum`
  3. Run whatever project you want 😃
  
