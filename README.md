@@ -1,20 +1,11 @@
-<h1 align="right">
-  <img src="https://miro.medium.com/max/1400/1*LDHQffX7z5OGkzRP-WBc4g.png" width="250px" align="left" alt="Source: IBM.COM" title="Source: IBM.COM" />
-  Software Analysis For The Development Of Artificial Intelligence And Big Data Tasks In Quantum Computers
-</h1>
+<img src="./docs/Images/GitHub - Banner.png" alt="Quantum Computer Source: ibm.com" title="Quantum Computer Source: ibm.com" />
 
 
-<p align="right">
-  <br><br>
-  <!-- License -->
+<p align="center">
   <a>
     <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
   </a>
-  
 </p>
-<br>
-<br>
-<br>
 
 ## :eyes: Overview
 
@@ -63,6 +54,4 @@ This project is under the MIT license. Take a look at the [LICENSE](LICENSE) fil
 
 <br>
 <br>
-<img height="70px" align="left" src="./docs/Images/logo-fatec-colorido.png">
-<img height="70px" src="./docs/Images/logo-jd-colorido.png">
-<img height="70px" src="./docs/Images/logo-cps-colorido.png">
+<img src="./docs/Images/GitHub - Footer.png">
