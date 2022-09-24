@@ -33,7 +33,7 @@ This is a scientific research project, being developed in [FATEC Americana](http
  3. Run whatever project you want 😃
  
 ## :recycle: Contribute
- 1. Fork this repository;
+ 1. Fork this repository
  2. Create a branch with your feature: ```git checkout -b my-feature```
  3. Commit your changes: ```git commit -m 'feat: My new feature'```
  4. Push your branch: ```git push origin my-feature```
