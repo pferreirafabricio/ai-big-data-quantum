@@ -41,6 +41,25 @@ This is a scientific research project, being developed in [FATEC Americana](http
 ## :page_with_curl:	License
 This project is under the MIT license. Take a look at the [LICENSE](LICENSE) file for more details.
 
+## 🤝🏼 Contributors
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://github.com/pferreirafabricio" target="_blank">
+          <img width="80px" src="https://avatars.githubusercontent.com/u/42717522?v=4">
+        </a>
+      </td>
+      <td align="center" valign="middle">
+        <a href="http://lattes.cnpq.br/1666058085031027" target="_blank">
+          <img width="80px" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4757651T6">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## 📚 Learn more
 
   * What are the Q# programming language and Quantum Development Kit (QDK)?: https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk
