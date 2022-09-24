@@ -7,9 +7,11 @@
   </a>
 </p>
 
+<!--
 ## :eyes: Overview
 
 <br/>
+-->
 
 ## :open_book: About
 This is a scientific research project, being developed in [FATEC Americana](https://www.fatec.edu.br/), aiming to study software that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
