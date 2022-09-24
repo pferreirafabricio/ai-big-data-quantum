@@ -60,8 +60,9 @@ This project is under the MIT license. Take a look at the [LICENSE](LICENSE) fil
   * Data types in Q#: https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem
   * Quantum computing history and background: https://docs.microsoft.com/en-us/azure/quantum/concepts-overview
   * Azure Quantum – Quantum Service: https://azure.microsoft.com/en-us/services/quantum
- 
 
-
-<img height="70px" align="left" src="https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png">
-<img height="70px" src="https://www.fatec.edu.br/jogos/wp-content/uploads/sites/2/2019/08/Cores@300x.png">
+<br>
+<br>
+<img height="70px" align="left" src="./docs/Images/logo-fatec-colorido.png">
+<img height="70px" src="./docs/Images/logo-jd-colorido.png">
+<img height="70px" src="./docs/Images/logo-cps-colorido.png">
