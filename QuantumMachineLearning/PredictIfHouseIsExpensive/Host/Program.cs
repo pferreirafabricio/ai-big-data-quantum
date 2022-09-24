@@ -2,7 +2,11 @@
 using Microsoft.Quantum.Simulation.Simulators;
 using PredictIfHouseIsExpensive;
 using PredictIfHouseIsExpensive.Quantum;
+using System.Diagnostics;
 using System.Linq;
+
+var sw = new Stopwatch();
+sw.Start();
 
 HouseData[] houseData =
 {
@@ -80,10 +84,14 @@ var results = await ValidateClassifyLinearlySeparableModel
         numberOfMeasurements: numberOfMeasurements
     );
 
+sw.Stop();
+
 foreach (var result in results)
 {
     Console.WriteLine($"Result: {result:F5}.");
 }
+
+Console.WriteLine("Elapsed={0}", sw.Elapsed);
 
 public class HouseData
 {

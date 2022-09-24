@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Diagnostics;
 using Microsoft.ML;
 using Microsoft.ML.Data;
+
+var sw = new Stopwatch();
+sw.Start();
 
 MLContext mlContext = new MLContext();
 
@@ -40,10 +44,13 @@ var result = mlContext.Model
     .CreatePredictionEngine<HouseData, Prediction>(model)
     .Predict(validationData);
 
+sw.Stop();
+
 var size = (validationData.Size * 1000) / 10.76;
 var price = (validationData.Price * 100_000) * 5;
 
 Console.WriteLine($"Predicted price for size: {size:F2}m2 and price: {price:C2}. Is expensive? {result.IsExpensive}");
+Console.WriteLine("Elapsed={0}", sw.Elapsed);
 
 public class HouseData
 {
