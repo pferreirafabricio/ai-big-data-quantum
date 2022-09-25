@@ -14,7 +14,7 @@
 -->
 
 ## :open_book: About
-This is a scientific research project, under development at [FATEC Americana](https://www.fatec.edu.br/), aiming to study software that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
+This is a scientific research project, under development at [FATEC Americana](https://www.fatec.edu.br/), aiming to study softwares that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
 
 ## 🔁 Contributions
 - [Microsoft Quantum Docs - Pull Request 503](https://github.com/MicrosoftDocs/quantum-docs/pull/503)
@@ -73,6 +73,5 @@ This project is under the MIT license. Take a look at the [LICENSE](LICENSE) fil
   * Quantum computing history and background: https://docs.microsoft.com/en-us/azure/quantum/concepts-overview
   * Azure Quantum – Quantum Service: https://azure.microsoft.com/en-us/services/quantum
 
-<br>
 <br>
 <img src="./docs/Images/GitHub - Footer.png">
