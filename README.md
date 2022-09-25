@@ -17,9 +17,16 @@
 This is a scientific research project, under development at [FATEC Americana](https://www.fatec.edu.br/), aiming to study softwares that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
 
 ## 🔁 Contributions
+Some contributions made by the authors in external projects.
+
 - [Microsoft Quantum Docs - Pull Request 503](https://github.com/MicrosoftDocs/quantum-docs/pull/503)
 - [Microsoft Quantum Docs - Issue 474](https://github.com/MicrosoftDocs/quantum-docs/issues/474)
 - [Microsoft Quantum Docs - Pull Request 565](https://github.com/MicrosoftDocs/quantum-docs/pull/565)
+
+## 🧪 Tests
+Some tests made based on the algorithms that are being developed.
+
+- [Basic performance comparison between classical and quantum machine learning](https://github.com/pferreirafabricio/ai-big-data-quantum/releases/tag/v0.0.1)
 
 ## :bricks: This project was built with: 
 - [.NET](https://dotnet.microsoft.com/en-us/)
