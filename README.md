@@ -41,7 +41,7 @@ This is a scientific research project, under development at [FATEC Americana](ht
 ## :page_with_curl:	License
 This project is under the MIT license. Take a look at the [LICENSE](LICENSE) file for more details.
 
-## 🤝🏼 Contributors
+## 🤝🏼 Researchers
 
 <table>
   <tbody>
