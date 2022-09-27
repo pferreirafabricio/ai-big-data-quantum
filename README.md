@@ -8,12 +8,12 @@
 </p>
 
 <!--
-## :eyes: Overview
+## 👀 Overview
 
 <br/>
 -->
 
-## :open_book: About
+## 📖 About
 This is a scientific research project, under development at [FATEC Americana](https://www.fatec.edu.br/), aiming to study softwares that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
 
 ## 🔁 Contributions
@@ -28,7 +28,7 @@ Some tests made based on the algorithms that are being developed.
 
 - [Basic performance comparison between classical and quantum machine learning](https://github.com/pferreirafabricio/ai-big-data-quantum/releases/tag/v0.0.1)
 
-## :bricks: This project was built with: 
+## 🧱 This project was built with: 
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [Q#](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
 - [QDK](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
@@ -39,13 +39,13 @@ Some tests made based on the algorithms that are being developed.
  2. Enter in the project's folder: `cd ai-big-data-quantum`
  3. Run whatever project you want 😃
  
-## :recycle: Contribute
+## ♻ Contribute
  1. Fork this repository
  2. Create a branch with your feature: ```git checkout -b my-feature```
  3. Commit your changes: ```git commit -m 'feat: My new feature'```
  4. Push your branch: ```git push origin my-feature```
 
-## :page_with_curl:	License
+## 🧾	License
 This project is under the MIT license. Take a look at the [LICENSE](LICENSE) file for more details.
 
 ## 🤝🏼 Researchers
