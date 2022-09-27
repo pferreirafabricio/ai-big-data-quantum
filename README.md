@@ -33,6 +33,7 @@ Some tests made based on the algorithms that are being developed.
 - [Q#](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
 - [QDK](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [ML.NET](https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet)
 
 ## 🏄‍♂️ Quick Start
  1. Clone this repository `git clone https://github.com/pferreirafabricio/ai-big-data-quantum.git`
