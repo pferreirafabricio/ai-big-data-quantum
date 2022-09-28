@@ -1,13 +1,28 @@
 # ⚛ Predict if a house price could be considered expensive
 
 <p align="left">
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock
+This is a Quatm Machine Learning algorithm that uses quantum classification to identify whether a house can be considered expensive for its properties like size and price.
   <br><br>
   <!-- License -->
   <a>
     <img alt="license url" src="https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
   </a>
 </p>
+
+## 🗂 Folder structure
+
+- Host
+```ini
+- Program.cs 
+Core classical logic, written in C# with .NET 6, for interacting with quantum backend functions and operations.
+```
+
+- QuantumBackend
+```ini
+- Library.qs 
+Core quantum logic, written in Q# with QDK, provides functions for training and validating models.
+```
+
 
 ## ⚗️ Results Summary
 
