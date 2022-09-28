@@ -80,6 +80,7 @@ This project is under the MIT license. Take a look at the [LICENSE](LICENSE) fil
   * Data types in Q#: https://docs.microsoft.com/en-us/azure/quantum/user-guide/language/typesystem
   * Quantum computing history and background: https://docs.microsoft.com/en-us/azure/quantum/concepts-overview
   * Azure Quantum – Quantum Service: https://azure.microsoft.com/en-us/services/quantum
+  * QuantumClassification - https://github.com/microsoft/QuantumKatas/tree/main/tutorials/QuantumClassification
 
 <br>
 <img src="./docs/Images/GitHub - Footer.png">
