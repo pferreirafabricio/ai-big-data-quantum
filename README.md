@@ -3,43 +3,70 @@
 
 <p align="center">
   <a>
-    <img alt="license url" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
+    <img alt="license url" src="https://img.shields.io/badge/License-GPL--3.0-green?style=for-the-badge&labelColor=1C1E26&color=FDDE4A">
   </a>
 </p>
 
 <!--
-## :eyes: Overview
+## 👀 Overview
 
 <br/>
 -->
 
-## :open_book: About
-This is a scientific research project, being developed in [FATEC Americana](https://www.fatec.edu.br/), aiming to study software that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
+## 📖 About
+This is a scientific research project, under development at [FATEC Americana](https://www.fatec.edu.br/), aiming to study softwares that can be used to develop Artificial Intelligence, Machine Learning, and Big Data tasks in quantum computers. Research guided by [Dra. Mariana Godoy Vazquez Miano](http://lattes.cnpq.br/1666058085031027).
 
 ## 🔁 Contributions
+Some contributions made by the authors in external projects.
+
 - [Microsoft Quantum Docs - Pull Request 503](https://github.com/MicrosoftDocs/quantum-docs/pull/503)
 - [Microsoft Quantum Docs - Issue 474](https://github.com/MicrosoftDocs/quantum-docs/issues/474)
 - [Microsoft Quantum Docs - Pull Request 565](https://github.com/MicrosoftDocs/quantum-docs/pull/565)
 
-## :bricks: This project was built with: 
+## 🧪 Tests
+Some tests made based on the algorithms that are being developed.
+
+- [Basic performance comparison between classical and quantum machine learning](https://github.com/pferreirafabricio/ai-big-data-quantum/releases/tag/v0.0.1)
+
+## 🧱 This project was built with: 
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [Q#](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
 - [QDK](https://docs.microsoft.com/en-us/azure/quantum/overview-what-is-qsharp-and-qdk)
 - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [ML.NET](https://dotnet.microsoft.com/en-us/apps/machinelearning-ai/ml-dotnet)
 
 ## 🏄‍♂️ Quick Start
  1. Clone this repository `git clone https://github.com/pferreirafabricio/ai-big-data-quantum.git`
  2. Enter in the project's folder: `cd ai-big-data-quantum`
  3. Run whatever project you want 😃
  
-## :recycle: Contribute
+## ♻ Contribute
  1. Fork this repository
  2. Create a branch with your feature: ```git checkout -b my-feature```
  3. Commit your changes: ```git commit -m 'feat: My new feature'```
  4. Push your branch: ```git push origin my-feature```
 
-## :page_with_curl:	License
+## 🧾	License
 This project is under the MIT license. Take a look at the [LICENSE](LICENSE) file for more details.
+
+## 🤝🏼 Researchers
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://github.com/pferreirafabricio" target="_blank">
+          <img width="80px" src="https://avatars.githubusercontent.com/u/42717522?v=4">
+        </a>
+      </td>
+      <td align="center" valign="middle">
+        <a href="http://lattes.cnpq.br/1666058085031027" target="_blank">
+          <img width="80px" src="http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4757651T6">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 📚 Learn more
 
@@ -54,6 +81,5 @@ This project is under the MIT license. Take a look at the [LICENSE](LICENSE) fil
   * Quantum computing history and background: https://docs.microsoft.com/en-us/azure/quantum/concepts-overview
   * Azure Quantum – Quantum Service: https://azure.microsoft.com/en-us/services/quantum
 
-<br>
 <br>
 <img src="./docs/Images/GitHub - Footer.png">
