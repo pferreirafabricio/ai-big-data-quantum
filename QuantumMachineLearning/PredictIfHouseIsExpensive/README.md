@@ -12,13 +12,13 @@ This is a Quatm Machine Learning algorithm that uses quantum classification to i
 ## 🗂 Folder structure
 
 - Host
-```ini
+```
 - Program.cs 
 Core classical logic, written in C# with .NET 6, for interacting with quantum backend functions and operations.
 ```
 
 - QuantumBackend
-```ini
+```
 - Library.qs 
 Core quantum logic, written in Q# with QDK, provides functions for training and validating models.
 ```
