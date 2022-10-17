@@ -22,6 +22,7 @@ Some contributions made by the authors in external projects.
 - [Microsoft Quantum Docs - Pull Request 503](https://github.com/MicrosoftDocs/quantum-docs/pull/503)
 - [Microsoft Quantum Docs - Issue 474](https://github.com/MicrosoftDocs/quantum-docs/issues/474)
 - [Microsoft Quantum Docs - Pull Request 565](https://github.com/MicrosoftDocs/quantum-docs/pull/565)
+- [Microsoft Quantum Docs - Pull Request 572](https://github.com/MicrosoftDocs/quantum-docs/pull/572)
 
 ## 🧪 Tests
 Some tests made based on the algorithms that are being developed.
