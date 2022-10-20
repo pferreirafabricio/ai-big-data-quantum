@@ -23,6 +23,7 @@ Some contributions made by the authors in external projects.
 - [Microsoft Quantum Docs - Issue 474](https://github.com/MicrosoftDocs/quantum-docs/issues/474)
 - [Microsoft Quantum Docs - Pull Request 565](https://github.com/MicrosoftDocs/quantum-docs/pull/565)
 - [Microsoft Quantum Docs - Pull Request 572](https://github.com/MicrosoftDocs/quantum-docs/pull/572)
+- [Can't add Ionq or Quantinuum as providers in workspace - Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/1035631/can39t-add-ionq-or-quantinuum-as-providers-in-work.html)
 
 ## 🧪 Tests
 Some tests made based on the algorithms that are being developed.
