@@ -1,7 +1,7 @@
 # ⚛ Predict if a house price could be considered expensive
 
 <p align="left">
-This is a Quatm Machine Learning algorithm that uses quantum classification to identify whether a house can be considered expensive for its properties like size and price.
+This is a Quantum Machine Learning algorithm that uses quantum classification to identify whether a house can be considered expensive for its properties like size and price.
   <br><br>
   <!-- License -->
   <a>
